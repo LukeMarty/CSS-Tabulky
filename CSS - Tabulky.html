@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title>Tabulky</title>
+    <meta charset='utf-8'>
+    <meta name='description' content='CSS - Tabulky'>
+    <meta name='keywords' content=''>
+    <meta name='author' content='Lukas Martinek'>
+    <meta name='robots' content='all'>
+    <link href='/favicon.png' rel='shortcut icon' type='image/png'>
+    <style>
+        div{ 
+            margin: 20px
+        }
+
+        .th2{
+            color: #0066CC;
+            border-bottom: 5px solid #0066CC;
+            text-align: left;
+            padding-right: 15px;
+            padding-left: 0px;
+        }
+
+        #th4{
+            border-bottom: 5px solid #0066CC;
+        }
+
+        .th3{
+            color: #0066CC;
+            text-align: left;
+            padding-right: 15px;
+            padding-left: 0px;
+        }
+
+
+        th{
+            color:#0099ff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            font-family: sans-serif;
+            text-align: left;
+        }
+
+        #tabulka1{
+            border: 2px solid #0099ff;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .tr1{
+            border-bottom: 1px solid grey;
+            border-top: 1px solid grey;
+            background-color: #e8edff;
+        }
+
+        #lorem{
+            font-style: italic;
+        }
+
+        td{
+            color: grey;
+            padding:10px;
+        }
+
+        #tabulka2{
+            border-top: 10px solid #0099ff;
+            border-bottom: 10px solid #0099ff;
+            border-collapse: collapse;
+            text-align: left;
+            border-left: 1px solid #0099ff;
+            border-right: 1px solid #0099ff;
+        }
+
+        .tr2{
+            background-color: #e8edff;
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+        }
+
+        .t2{
+            border-left: 1px solid #0099ff;
+            border-right: 1px solid #0099ff;
+            padding-right: 50px;
+        }
+
+        .th1{
+            color: #3333cc;
+        }
+
+        .t3{
+            border-bottom: 1px solid grey;
+            padding-bottom: 0px;
+            padding-left: 0px;
+        }
+
+        #tabulka3{
+            width: 500px;
+        }
+
+        #tabulka4 tr:nth-child(3) {
+             background-color: #efefef;
+        }       
+        
+        #tabulka4 tr:nth-child(even) {
+             background-color: lightgrey;
+        }
+
+        #tabulka4 tr:nth-child(3):hover {
+             background-color: green;
+        }      
+
+        #tabulka4 tr:nth-child(even):hover {
+             background-color: yellow;
+        }      
+
+        
+
+
+
+    </style>
+    </head>
+        <body>
+            <div>
+                <table id="tabulka1">
+                    <tr>
+                        <th class="th1">COMPANY</th>
+                        <th class="th1">Q1</th>
+                        <th class="th1">Q2</th>
+                        <th class="th1">Q3</th>
+                        <th class="th1">Q4</th>
+                    </tr>
+
+                    <tr class="tr1">
+                        <td>Microsoft</td>
+                        <td>20.3</td>
+                        <td>30.5</td>
+                        <td>23.5</td>
+                        <td>33.5</td>
+                    </tr>
+
+                    <tr class="tr1">
+                        <td>Google</td>
+                        <td>20.3</td>
+                        <td>30.53</td>
+                        <td>23.54</td>
+                        <td>23.5</td>
+                    </tr>
+
+                    <tr class="tr1">
+                        <td>Apple</td>
+                        <td>20.3</td>
+                        <td>30.5</td>
+                        <td>23.5</td>
+                        <td>23.5</td>
+                    </tr>
+
+                    <tr class="tr1">
+                        <td>IBM</td>
+                        <td>20.3</td>
+                        <td>30.9</td>
+                        <td>23.5</td>
+                        <td>23.5</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" id="lorem">
+                            Lorem ipsum dolor sit amet consectetuer interdum nibh vitae Curabitur.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <table id="tabulka2">
+                    <tr class="tr2">
+                        <th class="t2">Employe</th>
+                        <th class="t2">Salary</th>
+                        <th class="t2">Bonus</th>
+                        <th class="t2">Supervizor</th>
+                    </tr>
+
+                    <tr class="tr2">
+                        <td class="t2">stephen</td>
+                        <td class="t2">josephin</td>
+                        <td class="t2">joyce</td>
+                        <td class="t2">james</td>
+                    </tr>
+
+                    <tr class="tr2">
+                        <td class="t2">300$</td>
+                        <td class="t2">500$</td>
+                        <td class="t2">200$</td>
+                        <td class="t2">550$</td>
+                    </tr>
+
+                    <tr class="tr2">
+                        <td class="t2">bob</td>
+                        <td class="t2">andy</td>
+                        <td class="t2">annie</td>
+                        <td class="t2">annie</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <table id="tabulka3">
+                    <tr>
+                        <th class="th2">Employe</th>
+                        <th class="th2">Salary</th>
+                        <th class="th2">Bonus</th>
+                        <th class="th2">Supervizor</th>
+                    </tr>
+
+                    <tr>
+                        <td class="t3">stephen</td>
+                        <td class="t3">josephin</td>
+                        <td class="t3">joyce</td>
+                        <td class="t3">james</td>
+                    </tr>
+
+                    <tr>
+                        <td class="t3">300$</td>
+                        <td class="t3">500$</td>
+                        <td class="t3">200$</td>
+                        <td class="t3">550$</td>
+                    </tr>
+
+                    <tr>
+                        <td class="t3">bob</td>
+                        <td class="t3">andy</td>
+                        <td class="t3">annie</td>
+                        <td class="t3">annie</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <table id="tabulka4">
+                    <tr id="tr4">
+                        <th class="th3">Employe</th>
+                        <th class="th3">Salary</th>
+                        <th class="th3">Bonus</th>
+                        <th class="th3">Supervizor</th>
+                    </tr>
+
+                    <tr class="tr4.1">
+                        <td>stephen</td>
+                        <td>josephin</td>
+                        <td>joyce</td>
+                        <td>james</td>
+                    </tr>
+
+                    <tr class="tr4.1">
+                        <td>300$</td>
+                        <td>500$</td>
+                        <td>200$</td>
+                        <td>550$</td>
+                    </tr>
+
+                    <tr class="tr4.1">
+                        <td>bob</td>
+                        <td>andy</td>
+                        <td>annie</td>
+                        <td>annie</td>
+                    </tr>
+                </table>
+            </div>
+        </body>
+</html>
